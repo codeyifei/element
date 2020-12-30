@@ -4,7 +4,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN yarn --registry https://registry.npm.taobao.org/ && yarn build
+RUN yarn && yarn build
 
 FROM nginx
 
